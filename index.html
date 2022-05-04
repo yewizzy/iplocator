@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IP LOCATOR</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+    <body>
+        <section >
+            <div class="Tracker">
+                <div class="tracker-1">
+                    <div class="id-tracker">
+                        <h1>IP Address Tracker</h1>
+                    </div>
+                   
+                    <form id="caller" >
+                            <input type="text" placeholder="search for any IP address or domain" minlength="7" maxlength="15" size="15" pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$">
+                        <button class="submit"><img src="images/icon-arrow.svg" ></button>
+                     
+                    </form>
+                    <br>
+                </div>
+               
+
+                <div class="Ip-address">
+                    <div class="Ip-address1" >
+
+                        <p>IP ADDRESS</p>
+                        <h2 id="Ip-address">192.212.174.101</h2>
+                    </div>
+                    
+                    <div class="locator" >
+                        <p>LOCATION</p>
+                        <h2 id="locator">Brooklyn,
+                            NY<br> 100001</h2>
+                       
+                    </div>
+                    
+
+                    <div class="Timezone" >
+                        <p>TIMEZONE</p>
+                        <h2 id="Timezone">UTC -05:00</h2>
+                    </div>
+                    
+
+                    <div class="isp" >
+                        <p>ISP</p>
+                        <h2 id="isp" >SpaceX<br> Starlink</h2>
+                      
+                    </div>
+                    
+
+                </div>
+                <div id="map">
+
+                </div>
+            </div>
+
+        </section>
+        <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin="">
+</script>
+        <script src="app.js" ></script>
+    </body>
+</html>
